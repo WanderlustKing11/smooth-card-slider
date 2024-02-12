@@ -36,28 +36,60 @@ body {
 }
 
 
-/* Card # 1 */
+/* Big Cards */
 
 .big-card:nth-child(2) {
+  background-image: url('https://images.unsplash.com/photo-1683105164144-fdd8a29bd8c9?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
   transform: translateX(-10%) rotate(-1deg);
 }
 
-/* Card # 2 */
-
 .big-card:nth-child(4) {
+  background-image: url('https://images.unsplash.com/photo-1622599511051-16f55a1234d0?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
   transform: rotate(2deg);
 }
 
-/* Card # 3 */
-
 .big-card:nth-child(6) {
+  background-image: url('https://images.unsplash.com/photo-1514525263139-f7c8f10ae61d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
   transform: translateX(-6%) rotate(-3deg);
 }
 
-/* Card # 4 */
-
 .big-card:nth-child(8) {
+  background-image: url('https://images.unsplash.com/photo-1618517048289-4646902edaf5?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
   transform:translate(10%, 3%) rotate(5deg);
+}
+
+/* Little Cards */
+
+.little-card:nth-child(1) {
+  background-image: url('https://images.unsplash.com/photo-1628306938727-3c60ab7ac571?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.little-card:nth-child(3) {
+  background-image: url('https://images.unsplash.com/photo-1683105169704-f9077f21c16b?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.little-card:nth-child(5) {
+  background-image: url('https://images.unsplash.com/photo-1688141402330-f4ed03f6bbf9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fE1NQXxlbnwwfDF8MHx8fDI%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.little-card:nth-child(7)  {
+  background-image: url('https://images.unsplash.com/photo-1681203888755-bd61fe3558eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fE1NQXxlbnwwfDF8MHx8fDI%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -68,15 +100,31 @@ body {
 }
 
 .card-group:hover > .big-card:nth-child(4) {
-  transform: translate(-100%, 8%) rotate(-8deg);
+  transform: translate(-25%, 8%) rotate(-8deg);
 }
 
 .card-group:hover > .big-card:nth-child(6) {
   transform: translate(25%, 8%) rotate(8deg);
 }
 
-.card-group:hover > .big-card:nth-child(4) {
+.card-group:hover > .big-card:nth-child(8) {
   transform: translate(75%, 16%) rotate(24deg);
+}
+
+.card-group:hover > .little-card:nth-child(1) {
+  transform: translate(200%, -160%) rotate(-15deg);
+}
+
+.card-group:hover > .little-card:nth-child(3) {
+  transform: translate(160%, 170%) rotate(15deg);
+}
+
+.card-group:hover > .little-card:nth-child(5) {
+  transform: translate(-200%, -170%) rotate(15deg);
+}
+
+.card-group:hover > .little-card:nth-child(7) {
+  transform: translate(-280%, 140%) rotate(-15deg);
 }
 
 
